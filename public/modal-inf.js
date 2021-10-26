@@ -110,6 +110,10 @@ document.getElementById('btn_b1').onclick = () =>
             <li> gmmacario@uvg.edu.gt </li>
             <li> ext: 41118 </li>
         </ul>
+    Especialista en asuntos estudiantiles
+        <ul>
+            <li> Lidia Ofelia Xocop Roquel </li>
+        </ul>
     Administración
         <ul>
             <li> Cesar Ramos Funes </li>
@@ -121,6 +125,16 @@ document.getElementById('btn_b1').onclick = () =>
             <li> Josué David Minchez Monzón </li>
             <li> jdminchez@uvg.edu.gt </li>
             <li> ext: 41105 </li>
+        </ul>
+    Director administrativo
+        <ul>
+            <li> Erick Estuardo Rodas Ericastilla </li>
+            <li> ext: 41103 </li>
+        </ul>
+    Director de calidad académica
+        <ul>
+            <li> José Antonio López Rodríquez </li>
+            <li> ext: 41113 </li>
         </ul>
     <br>
     Horario de atención
@@ -158,7 +172,7 @@ document.getElementById('btn_b3').onclick = () =>
         </ul>
     Encargado de laboratorios
         <ul>
-            <li> Iván </li>
+            <li> Oscar Iván Yac Chávez </li>
             <li> oiyac@uvg.edu.gt </li>
         </ul>
     Dirección departamento de turismo
@@ -205,7 +219,7 @@ document.getElementById('btn_b4').onclick = () =>
     `,`
     Web master
         <ul>
-            <li> Luis Lopez </li>
+            <li> Luis Alberto Lopez García </li>
             <li> lalopez@uvg.edu.gt </li>
             <li> ext: 41308 </li>
         </ul>
@@ -254,40 +268,51 @@ document.getElementById('btn_b6').onclick = () =>
     showModal2('Módulo B6', 'https://momento360.com/e/u/60515e47ffd940e8994fbeda5af47d2d?utm_campaign=embed&utm_source=other&heading=-123.93&pitch=-12.18&field-of-view=75&size=medium', 'Maker Space','https://momento360.com/e/u/e6c217ac85d64308accf22ab030c9263?utm_campaign=embed&utm_source=other&heading=87.95&pitch=-43.23&field-of-view=75&size=medium', 'Maker Space','El módulo B6 es un edificio color crema con techo rojo.', `
     <ul>
         <li> Enfermería </li>
-        <li> Maker Space Naojilal </li>
+        <li> Maker Space Na'ojilal </li>
     </ul>
     `,`
     Enfermería
         <ul>
             <li> Meliza Arminda Godínez Orozco </li>
             <li> magonidez@uvg.edu.gt </li>
-            <li> ext: 41116 </li>
+            <li> ext: 41309 </li>
         </ul>
-    Encargado de Maker Space Naojilal
+    Coordinador de Maker Space Na'ojilal
         <ul>
-            <li> Jeremias </li>
-            <li> pendiente@uvg.edu.gt </li>
-            <li> ext: pendiente </li>
+            <li> M.A. Ing. Jeremias Ezequiel Morales García </li>
+            <li> jemorales@uvg.edu.gt </li>
+            <li> ext: 41309 </li>
         </ul>
-    Pagina (Maker Space): <a target="_blank" href="https://www.facebook.com/CEIACCESSUVG" style="font-weight: bold;"> Pagina </a>
+    FanPage (Maker Space): <a target="_blank" href="https://www.facebook.com/MakersUVG" class="link"> Pagina de facebook </a> <br>
+    LOGO (Maker Space): <a target="_blank" href="https://view.genial.ly/60ba8cad0045310d5064c7fa/interactive-image-logo-maker-uvg-altiplano" class="link"> Logo interactivo </a>
     <br> <br>
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
     `, 'Cerrar');
 document.getElementById('btn_b7').onclick = () => 
     showModal2('Módulo B7', 'https://momento360.com/e/u/1348b1e92ddd40e18f53a75cdec6ebf5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Biblioteca','https://momento360.com/e/u/cc40a24e33524977be7f325bc6c7013a?utm_campaign=embed&utm_source=other&heading=-256.43&pitch=-2.97&field-of-view=75&size=medium', 'Biblioteca','El módulo B7 es un edificio color crema con techo blanco.', `
-    <ul>
-        <li> Biblioteca </li>
-        <li> Fotocopiadora </li>
-    </ul>
-    `,`
-    Encargado de biblioteca
+    Biblioteca
         <ul>
-            <li> Pendiente </li>
-            <li> pendiente@uvg.edu.gt </li>
-            <li> ext: pendiente </li>
+            <li> Colección general, títulos de apoyo para carreras universitarias. </li>
+            <li> Colección Dr. Richard Adams, + cuatro mil títulos de Antropología y Sociología. </li>
+            <li> Colección de referencia. </li>
+            <li> Colección de materiales en discos compactos y videodiscos. </li>
+            <li> Colección de revistas de, arqueología, tecnología, agricultura y temas generales. </li>
+        </ul>
+    Servicio de reproducción 
+        <ul>
+            <li> Impresiones </li>
+            <li> Fotocopias </li>
+            <li> Escaneos </li> 
+        </ul>
+    
+    `,`
+    Biblioteca
+        <ul>
+            <li> biblioteca@altiplano.uvg.edu.gt </li>
+            <li> ext: 41303 </li>
         </ul>
     <br>
-    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
+    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 7:30-16:00 
     `, 'Cerrar');
 document.getElementById('btn_b8').onclick = () => 
     showModal2('Módulo B8', 'https://momento360.com/e/u/b2ccf916298d4535b7c130305f7d8a90?utm_campaign=embed&utm_source=other&heading=252.46&pitch=-10.1&field-of-view=75&size=medium', 'Laboratorio de computación 3', 'https://momento360.com/e/u/616d409f152443d59be02826f293dafc?utm_campaign=embed&utm_source=other&heading=-266.61&pitch=1.35&field-of-view=75&size=medium', 'Aula virtual', 'El módulo B8 es un edificio color crema con techo blanco.', `
@@ -393,7 +418,41 @@ document.getElementById('btn_ff').onclick = () =>
         <li> Centro de studios Atitlán </li>
         <li> Salón de reuniones </li>
     </ul>
-    `,`Pendiente
+    `,`
+    Secreataria CEA
+        <ul>
+            <li> Rosario Saquí Reanda </li>
+            <li> ext: 41502 </li>
+        </ul>
+    Técnico de laboratorio CEA
+        <ul>
+            <li> Juan Estuardo Bocel Pocop </li>
+            <li> ext: 41502 </li>
+        </ul>
+    Investigador asistente
+        <ul>
+            <li> Mónica María Martínez Fausto </li>
+            <li> ext: 41502 </li>
+        </ul>   
+    Jefe de educación ambiental CEA
+        <ul>
+            <li> Brenda María Noriega Fernandez </li>
+            <li> ext: 41503 </li>
+        </ul>     
+    Técnico de campo
+        <ul>
+            <li> Santos Rodrigo Chumil Bixcul </li>
+            <li> ext: 41503 </li>
+        </ul>  
+    Jefe de inveestigación
+        <ul>
+            <li> Jorge José García Polo </li>
+        </ul>
+    Director CEA
+        <ul>
+            <li> Jorge Luis Galindo Arébalo </li>
+            <li> ext: 41501 </li>
+        </ul>
     <br>
     <br>
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 `, 

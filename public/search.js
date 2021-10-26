@@ -38,7 +38,7 @@ function buscar(){
         modulos.show("btn_a5");
         clean();
     }
-    else if(text_value==="B1"||text_value==="Ayuda financiera"||text_value==="Susana Talé Pech"||text_value==="41117"||text_value==="Registro académico"||text_value==="Gloria Macario Tecum"||text_value==="41118"||text_value==="Administración"||text_value==="Cesar Ramos Funes"||text_value==="41104"||text_value==="Asistente de administración"||text_value==="Josué David Minchez Monzón"||text_value==="41105"){
+    else if(text_value==="B1"||text_value==="Ayuda financiera"||text_value==="Susana Talé Pech"||text_value==="41117"||text_value==="Registro académico"||text_value==="Gloria Macario Tecum"||text_value==="41118"||text_value==="Administración"||text_value==="Cesar Ramos Funes"||text_value==="41104"||text_value==="Asistente de administración"||text_value==="Josué David Minchez Monzón"||text_value==="41105"||text_value==="Especialista en asuntos estudiantiles"||text_value==="Lidia Ofelia Xocop Roquel"||text_value==="Director administrativo"||text_value==="Erick Estuardo Rodas Ericastilla"||text_value==="41103"||text_value==="Director de calidad académica"||text_value==="José Antonio López Rodríquez"||text_value==="41113"){
         modulos.arrow(23,10,0);
         modulos.center_camera(23,0,0);
         modulos.show("btn_b1");
@@ -50,13 +50,13 @@ function buscar(){
         modulos.show("btn_b2");
         clean();
     } 
-    else if(text_value==="B3"||text_value==="Secretaria facultad de ingeniería"||text_value==="Rosa Marleny Us Can"||text_value==="41203"||text_value==="Secretaria facultad de educación"||text_value==="Susely Marlene Mendez Tzoc"||text_value==="41207"||text_value==="Asistente facultad de eduación"||text_value==="Lisbeth Maritza Cuy Chom"||text_value==="41215"||text_value==="Encargado de laboratorios"||text_value==="Iván"||text_value==="Dirección departamento de turismo"||text_value==="Karla Tobias Lopez"||text_value==="41205"||text_value==="Dirección departamento de informática y administración"||text_value==="Omar Arreaga Lopez"||text_value==="41213"||text_value==="Dirección departamento agroforestal"||text_value==="Armando José Cutz Tax"||text_value==="41214"||text_value==="Dirección departamento de educación"||text_value==="Celso Saloj Pos"||text_value==="41216"||text_value==="Dirección departamento de educación física, deporte y recreación"||text_value==="Danilo Ponciano Nuñez"||text_value==="41206"){
+    else if(text_value==="B3"||text_value==="Secretaria facultad de ingeniería"||text_value==="Rosa Marleny Us Can"||text_value==="41203"||text_value==="Secretaria facultad de educación"||text_value==="Susely Marlene Mendez Tzoc"||text_value==="41207"||text_value==="Asistente facultad de eduación"||text_value==="Lisbeth Maritza Cuy Chom"||text_value==="41215"||text_value==="Iván"||text_value==="Encargado de laboratorios"||text_value==="Oscar Iván Yac Chávez"||text_value==="Dirección departamento de turismo"||text_value==="Karla Tobias Lopez"||text_value==="41205"||text_value==="Dirección departamento de informática y administración"||text_value==="Omar Arreaga Lopez"||text_value==="41213"||text_value==="Dirección departamento agroforestal"||text_value==="Armando José Cutz Tax"||text_value==="41214"||text_value==="Dirección departamento de educación"||text_value==="Celso Saloj Pos"||text_value==="41216"||text_value==="Dirección departamento de educación física, deporte y recreación"||text_value==="Danilo Ponciano Nuñez"||text_value==="41206"){
         modulos.arrow(20,10,-43);
         modulos.center_camera(20,0,-43);
         modulos.show("btn_b3");
         clean();
     }
-    else if(text_value==="B4"||text_value==="Web master"||text_value==="Luis Lopez"||text_value==="41308"||text_value==="Diseño gráfico"||text_value==="Henry SIlvestre Felipe Cojtin"||text_value==="Fejatura de comunicación social y marketing"||text_value==="Axel René Ávila Monzón"||text_value==="41305"||text_value==="Asistente de cursos libres (Centro de Idiomas)"||text_value==="Kevin Ronaldo Pocop Ramos"||text_value==="41307"||text_value==="Asistente de proyectos (Centro de Idiomas)"||text_value==="Adriana Marisol Bixcul Quisquiná"||text_value==="41307"||text_value==="Asistente de cursos internos (Centro de Idiomas)"||text_value==="Gloria María Bocel Cumes"||text_value==="41306"||text_value==="Centro de idiomas"||text_value==="CEI"){
+    else if(text_value==="B4"||text_value==="Web master"||text_value==="Luis Alberto Lopez García"||text_value==="41308"||text_value==="Diseño gráfico"||text_value==="Henry SIlvestre Felipe Cojtin"||text_value==="Fejatura de comunicación social y marketing"||text_value==="Axel René Ávila Monzón"||text_value==="41305"||text_value==="Asistente de cursos libres (Centro de Idiomas)"||text_value==="Kevin Ronaldo Pocop Ramos"||text_value==="41307"||text_value==="Asistente de proyectos (Centro de Idiomas)"||text_value==="Adriana Marisol Bixcul Quisquiná"||text_value==="41307"||text_value==="Asistente de cursos internos (Centro de Idiomas)"||text_value==="Gloria María Bocel Cumes"||text_value==="41306"||text_value==="Centro de idiomas"||text_value==="CEI"){
         modulos.arrow(20,10,-56);
         modulos.center_camera(20,0,-56);
         modulos.show("btn_b4");
@@ -68,13 +68,13 @@ function buscar(){
         modulos.show("btn_b5");
         clean();
     }
-    else if(text_value==="B6"||text_value==="Enfermería"||text_value==="Meliza Arminda Godínez Orozco"||text_value==="41116"||text_value==="Encargado de Maker Space Naojilal"||text_value==="Jeremias"||text_value==="456789"){
+    else if(text_value==="B6"||text_value==="Enfermería"||text_value==="Meliza Arminda Godínez Orozco"||text_value==="41116"||text_value==="Coordinador de Maker Space Na'ojilal"||text_value==="Jeremias Ezequiel Morales García"||text_value==="41309"||text_value==="Maker space"){
         modulos.arrow(20,10,-82);
         modulos.center_camera(20,0,-82);
         modulos.show("btn_b6");
         clean();
     }
-    else if(text_value==="B7"||text_value==="Biblioteca"||text_value==="Fotocopiadora"){
+    else if(text_value==="B7"||text_value==="Biblioteca"||text_value==="Servicio de reproducción"||text_value==="41303"||text_value==="Fotocopiadora"){
         modulos.arrow(20,10,-95);
         modulos.center_camera(20,0,-95);
         modulos.show("btn_b7");
@@ -152,7 +152,7 @@ function buscar(){
         modulos.show("btn_mm2");
         clean();
     }
-    else if(text_value==="F"||text_value==="Centro de estudios Atitlán"||text_value==="Salón de reuniones"){
+    else if(text_value==="F"||text_value==="Centro de estudios Atitlán"||text_value==="Salón de reuniones"||text_value==="Técnico de laboratorio CEA0"||text_value==="Juan Estuardo Bocel Pocop"||text_value==="41502"||text_value==="Investigador asistente"||text_value==="Mónica María Martínez Fausto"||text_value==="41502"||text_value==="Jefe de educación ambiental CEA"||text_value==="Brenda María Noriega Fernandez"||text_value==="41503"||text_value==="Técnico de campo"||text_value==="Santos Rodrigo Chumil Bixcul"||text_value==="41503"||text_value==="Jefe de inveestigación"||text_value==="Jorge José García Polo"||text_value==="Director CEA"||text_value==="Jorge Luis Galindo Arébalo"||text_value==="41501"){
         modulos.arrow(-70,10,60);
         modulos.center_camera(-70,0,60);
         modulos.show("btn_ff");
@@ -197,7 +197,6 @@ function buscar(){
     else if(text_value==="INTECAP"){
         modulos.arrow(-123,15,-35);
         modulos.center_camera(-123,0,-35);
-        modulos.show("btn_intecap");
         clean();
     }
 

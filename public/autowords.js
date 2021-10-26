@@ -79,6 +79,9 @@ let suggestions = [
     "Registro académico", "Gloria Macario Tecum", "41118",
     "Administración", "Cesar Ramos Funes", "41104",
     "Asistente de administración", "Josué David Minchez Monzón", "41105",
+    "Especialista en asuntos estudiantiles", "Lidia Ofelia Xocop Roquel",
+    "Director administrativo", "Erick Estuardo Rodas Ericastilla", "41103",
+    "Director de calidad académica", "José Antonio López Rodríquez", "41113",
 
     /* ------- B2 ------- */
     "B2",
@@ -87,7 +90,7 @@ let suggestions = [
     "B3", "Secretaria facultad de ingeniería", "Rosa Marleny Us Can", "41203",
     "Secretaria facultad de educación", "Susely Marlene Mendez Tzoc", "41207",
     "Asistente facultad de eduación", "Lisbeth Maritza Cuy Chom", "41215",
-    "Encargado de laboratorios", "Iván",
+    "Encargado de laboratorios", "Oscar Iván Yac Chávez", "Iván",
     "Dirección departamento de turismo", "Karla Tobias Lopez", "41205",
     "Dirección departamento de informática y administración", "Omar Arreaga Lopez", "41213",
     "Dirección departamento agroforestal", "Armando José Cutz Tax", "41214",
@@ -95,7 +98,7 @@ let suggestions = [
     "Dirección departamento de educación física, deporte y recreación", "Danilo Ponciano Nuñez", "41206",
 
     /* ------- B4 ------- */
-    "B4", "Web master", "Luis Lopez", "41308",
+    "B4", "Web master", "Luis Alberto Lopez García", "41308",
     "Diseño gráfico", "Henry SIlvestre Felipe Cojtin",
     "Fejatura de comunicación social y marketing", "Axel René Ávila Monzón", "41305",
     "Asistente de cursos libres (Centro de Idiomas)", "Kevin Ronaldo Pocop Ramos", "41307",
@@ -107,10 +110,11 @@ let suggestions = [
 
     /* ------- B6 ------- */
     "B6", "Enfermería", "Meliza Arminda Godínez Orozco", "41116",
-    "Encargado de Maker Space Naojilal", "Jeremias", "456789",
+    "Coordinaro de Maker Space Na'ojilal", "Jeremias Ezequiel Morales García", "41309", "Maker space",
 
     /* ------- B7 ------- */
     "B7", "Biblioteca", "Fotocopiadora",
+    "Servicio de reproducción", "41303",
 
     /* ------- B8 ------- */
     "B8", "Aula virtual", "Laboratorio de computación 3",
@@ -150,6 +154,13 @@ let suggestions = [
 
     /* ------- F ------- */
     "F", "Centro de estudios Atitlán", "Salón de reuniones",
+    "Secreataria CEA", "Rosario Saquí Reanda", "41502",
+    "Técnico de laboratorio CEA0", "Juan Estuardo Bocel Pocop", "41502",
+    "Investigador asistente", "Mónica María Martínez Fausto", "41502",
+    "Jefe de educación ambiental CEA", "Brenda María Noriega Fernandez", "41503",
+    "Técnico de campo", "Santos Rodrigo Chumil Bixcul", "41503",
+    "Jefe de inveestigación", "Jorge José García Polo",
+    "Director CEA", "Jorge Luis Galindo Arébalo", "41501",
 
     /* ------- E ------- */
     "E", "EDUCON", "Dirección EDUCON", "Nely Amparo Elena Can Saquic", "41401",

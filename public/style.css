@@ -4,6 +4,9 @@ body{
 ul li a{
     font-size: 18px;
 }
+.navColor{
+	background-color: #414042;
+}
 .navbar-brand{
     font-size: 25px;
 }
@@ -92,6 +95,7 @@ ul li a{
 }
 
 
+
 /* ============ Boton popup info ============ */
 .action{
 	position: fixed;
@@ -99,7 +103,7 @@ ul li a{
 	left: 50px;
 	width: 60px;
 	height: 60px;
-	background-color: #078b45;
+	background-color: #39b24a;
 	border-radius: 50px;
 	color:#FFF;
 	box-shadow: 2px 2px 3px #424949;
@@ -128,7 +132,7 @@ ul li a{
 	}
 	.contimg img{
 		height: 100%;
-		width: 40%;
+		width: 100%;
 	}
 	.ifr-360{
 		height: 375px;
@@ -157,7 +161,7 @@ ul li a{
 	}
 	.contimg img{
 		height: 100%;
-		width: 70%;
+		width: 100%;
 	}
 	.ifr-360{
 		height: 350px;
