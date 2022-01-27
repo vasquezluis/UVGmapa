@@ -108,6 +108,12 @@ function centrar_camara(x,y,z){
     controls.update();
 }
 
+/*----------------------- funcion para cerrar el menu de botones en dispositivos moviles ----------------------- */
+function autoclick(){
+    // id del boton toggler en index
+    let button = document.getElementById('togglermovil');
+    button.click();
+}
 
 
 /*----------------------- funcion click en el botón modulos A -----------------------*/
@@ -120,6 +126,8 @@ function click_modulo_a1(){
     mostrar("btn_a1");
     //showButton('btn1');
     //arrow(65,5,-47);
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_moda1.addEventListener('click', click_modulo_a1);
@@ -131,6 +139,8 @@ function click_modulo_a2(){
     //arrow(65,5,-64);
     // mostrar boton flotante
     mostrar("btn_a2");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_moda2.addEventListener('click', click_modulo_a2);
@@ -141,6 +151,8 @@ function click_modulo_a3(){
     flecha(65,10,-66);
     // mostrar boton flotante
     mostrar("btn_a3");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_moda3.addEventListener('click', click_modulo_a3);
@@ -151,6 +163,8 @@ function click_modulo_a4(){
     flecha(65,10,-92);
     // mostrar boton flotante
     mostrar("btn_a4");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_moda4.addEventListener('click', click_modulo_a4);
@@ -161,6 +175,8 @@ function click_modulo_a5(){
     flecha(65,10,-105);
     // mostrar boton flotante
     mostrar("btn_a5");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_moda5.addEventListener('click', click_modulo_a5);
@@ -175,6 +191,8 @@ function click_modulo_b1(){
     flecha(23,10,0);
     // mostrar boton flotante
     mostrar("btn_b1");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb1.addEventListener('click', click_modulo_b1);
@@ -185,6 +203,8 @@ function click_modulo_b2(){
     flecha(20,10,-30);
     // mostrar boton flotante
     mostrar("btn_b2");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb2.addEventListener('click', click_modulo_b2);
@@ -195,6 +215,8 @@ function click_modulo_b3(){
     flecha(20,10,-43);
     // mostrar boton flotante
     mostrar("btn_b3");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb3.addEventListener('click', click_modulo_b3);
@@ -205,6 +227,8 @@ function click_modulo_b4(){
     flecha(20,10,-56);
     // mostrar boton flotante
     mostrar("btn_b4");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb4.addEventListener('click', click_modulo_b4);
@@ -215,6 +239,8 @@ function click_modulo_b5(){
     flecha(20,10,-69);
     // mostrar boton flotante
     mostrar("btn_b5");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb5.addEventListener('click', click_modulo_b5);
@@ -225,6 +251,8 @@ function click_modulo_b6(){
     flecha(20,10,-82);
     // mostrar boton flotante
     mostrar("btn_b6");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb6.addEventListener('click', click_modulo_b6);
@@ -235,6 +263,8 @@ function click_modulo_b7(){
     flecha(20,10,-95);
     // mostrar boton flotante
     mostrar("btn_b7");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb7.addEventListener('click', click_modulo_b7);
@@ -245,6 +275,8 @@ function click_modulo_b8(){
     flecha(20,10,-108);
     // mostrar boton flotante
     mostrar("btn_b8");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modb8.addEventListener('click', click_modulo_b8);
@@ -259,6 +291,8 @@ function click_modulo_c1(){
     flecha(-58,10,-58);
     // mostrar boton flotante
     mostrar("btn_c1");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modc1.addEventListener('click', click_modulo_c1);
@@ -268,6 +302,8 @@ function click_modulo_c2(){
     // Colocación de flecha con el modulo
     flecha(-50,10,-73);
     mostrar("btn_c2");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modc2.addEventListener('click', click_modulo_c2);
@@ -277,6 +313,8 @@ function click_modulo_c3(){
     // Colocación de flecha con el modulo
     flecha(-50,10,-86);
     mostrar("btn_c3");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modc3.addEventListener('click', click_modulo_c3);
@@ -286,6 +324,8 @@ function click_modulo_c4(){
     // Colocación de flecha con el modulo
     flecha(-50,10,-99);
     mostrar("btn_c4");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modc4.addEventListener('click', click_modulo_c4);
@@ -295,6 +335,8 @@ function click_modulo_c5(){
     // Colocación de flecha con el modulo
     flecha(-50,10,-112);
     mostrar("btn_c5");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_modc5.addEventListener('click', click_modulo_c5);
@@ -307,6 +349,8 @@ function click_varios_k(){
     // Colocación de flecha con el modulo
     flecha(-37,10,-40);
     mostrar("btn_kk");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_k.addEventListener('click', click_varios_k);
@@ -316,6 +360,8 @@ function click_varios_cafe(){
     // Colocación de flecha con el modulo
     flecha(-5,10,-165);
     mostrar("btn_cafe");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_cafe.addEventListener('click', click_varios_cafe);
@@ -325,6 +371,8 @@ function click_varios_mayor(){
     // Colocación de flecha con el modulo
     flecha(-35,15,-165);
     mostrar("btn_mayor");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_mayor.addEventListener('click', click_varios_mayor);
@@ -334,6 +382,8 @@ function click_varios_n(){
     // Colocación de flecha con el modulo
     flecha(-116,10,60);
     mostrar("btn_nn");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_n.addEventListener('click', click_varios_n);
@@ -343,6 +393,8 @@ function click_varios_m1(){
     // Colocación de flecha con el modulo
     flecha(-92,10,60);
     mostrar("btn_mm1");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_m1.addEventListener('click', click_varios_m1);
@@ -352,6 +404,8 @@ function click_varios_m2(){
     // Colocación de flecha con el modulo
     flecha(-105,10,60);
     mostrar("btn_mm2");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_m2.addEventListener('click', click_varios_m2);
@@ -361,6 +415,8 @@ function click_varios_f(){
     // Colocación de flecha con el modulo
     flecha(-70,10,60);
     mostrar("btn_ff");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_f.addEventListener('click', click_varios_f);
@@ -370,6 +426,8 @@ function click_varios_e(){
     // Colocación de flecha con el modulo
     flecha(-40,10,80);
     mostrar("btn_ee");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_e.addEventListener('click', click_varios_e);
@@ -379,6 +437,8 @@ function click_varios_ñ(){
     // Colocación de flecha con el modulo
     flecha(-90,10,100);
     mostrar("btn_ññ");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_ñ.addEventListener('click', click_varios_ñ);
@@ -388,6 +448,8 @@ function click_varios_caja(){
     // Colocación de flecha con el modulo
     flecha(-60,10,140);
     mostrar("btn_cajaa");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_caja.addEventListener('click', click_varios_caja);
@@ -397,6 +459,8 @@ function click_varios_garita(){
     // Colocación de flecha con el modulo
     flecha(0,10,160);
     mostrar("btn_garita");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_garita.addEventListener('click', click_varios_garita);
@@ -406,6 +470,8 @@ function click_varios_salalti(){
     // Colocación de flecha con el modulo
     flecha(25,10,140);
     mostrar("btn_ll");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_salalti.addEventListener('click', click_varios_salalti);
@@ -415,6 +481,8 @@ function click_varios_hospital(){
     // Colocación de flecha con el modulo
     flecha(60,10,15);
     mostrar("btn_hospital");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_hospital.addEventListener('click', click_varios_hospital);
@@ -427,6 +495,8 @@ function click_varios_intecap(){
     // Colocación de flecha con el modulo
     flecha(-123,15,-35);
     mostrar("btn_intecap");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_intecap.addEventListener('click', click_varios_intecap);
@@ -439,6 +509,8 @@ function click_canchas(){
     // Colocación de flecha con el modulo
     flecha(-15,10,-80);
     mostrar("btn_canchass");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_canchas.addEventListener('click', click_canchas);
@@ -448,6 +520,8 @@ function click_campo1(){
     // Colocación de flecha con el modulo
     flecha(5,10,70);
     mostrar("btn_campo11");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_campo1.addEventListener('click', click_campo1);
@@ -457,6 +531,8 @@ function click_campo2(){
     // Colocación de flecha con el modulo
     flecha(100,10,-150);
     mostrar("btn_campo22");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_campo2.addEventListener('click', click_campo2);
@@ -466,6 +542,8 @@ function click_area1(){
     // Colocación de flecha con el modulo
     flecha(-8,10,125);
     mostrar("btn_area11");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_area1.addEventListener('click', click_area1);
@@ -475,6 +553,8 @@ function click_area2(){
     // Colocación de flecha con el modulo
     flecha(-70,10,85);
     mostrar("btn_area22");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_area2.addEventListener('click', click_area2);
@@ -484,6 +564,8 @@ function click_area3(){
     // Colocación de flecha con el modulo
     flecha(-35,10,-10);
     mostrar("btn_area33");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_area3.addEventListener('click', click_area3);
@@ -493,6 +575,8 @@ function click_area4(){
     // Colocación de flecha con el modulo
     flecha(3,10,-140);
     mostrar("btn_area44");
+    // función para cerrar el menú de opciones en dispositivos moviles
+    autoclick();
 }
 // event Listener
 btn_area4.addEventListener('click', click_area4);

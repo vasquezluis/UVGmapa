@@ -34,10 +34,11 @@ function models(){
 // Crear una geometría
 var geometry = new THREE.BoxGeometry(2,2,2);
 var material = new THREE.MeshBasicMaterial({color: 0x00ff00}); //wareframe es para los mallas
-var cube = new THREE.Mesh(geometry, material);
-cube.position.set(0,0,0);
-cube.scale.set(2,2,2);
-scene.add(cube);
+// cubo de ayuda para el centro de la escena
+// var cube = new THREE.Mesh(geometry, material);
+// cube.position.set(0,0,0);
+// cube.scale.set(2,2,2);
+// scene.add(cube);
 
 // modelo de b1
 loader.load('/models/b/b1.gltf', result => {
@@ -1634,6 +1635,71 @@ loader.load('/models/nature/arbolito.gltf', result => {
     scene.add(arbolito);
 });
 
+// modelo texto entrada
+loader.load('/models/text/entrada.gltf', result => {
+    var entradatext = result.scene.children[0];
+    // para las sombras
+    entradatext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    entradatext.position.set(11.5,15,160);
+    entradatext.scale.set(5,5,5);
+    entradatext.rotation.set(-Math.PI/2,Math.PI,0);
+    scene.add(entradatext);
+});
+// modelo texto intecap
+loader.load('/models/text/intecap.gltf', result => {
+    var intecaptext = result.scene.children[0];
+    // para las sombras
+    intecaptext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    intecaptext.position.set(-120,15,-20);
+    intecaptext.scale.set(5,5,5);
+    intecaptext.rotation.set(-Math.PI/2,Math.PI,Math.PI/2);
+    scene.add(intecaptext);
+});
+// modelo texto h de ojos
+loader.load('/models/text/ojos.gltf', result => {
+    var ojostext = result.scene.children[0];
+    // para las sombras
+    ojostext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    ojostext.position.set(60,15,5);
+    ojostext.scale.set(5,5,5);
+    ojostext.rotation.set(-Math.PI/2,Math.PI,-Math.PI/2);
+    scene.add(ojostext);
+});
+// modelo texto h de ojos
+loader.load('/models/text/uvg.gltf', result => {
+    var uvgtext = result.scene.children[0];
+    // para las sombras
+    uvgtext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    uvgtext.position.set(0,15,0);
+    uvgtext.scale.set(5,5,5);
+    uvgtext.rotation.set(Math.PI/2,0,0);
+    scene.add(uvgtext);
+});
+
 };
 
 
@@ -1684,6 +1750,17 @@ controls.screenSpacePanning = false;
 controls.enableRotate = true;
 
 
+/* ---------------------- Configuracion de skybox ----------------------*/
+let cubeloader = new THREE.CubeTextureLoader();
+var skybox = cubeloader.load([
+    "img/skybox/posx.jpg",
+    "img/skybox/negx.jpg",
+    "img/skybox/posy.jpg",
+    "img/skybox/negy.jpg",
+    "img/skybox/posz.jpg",
+    "img/skybox/negz.jpg"
+]);
+scene.background = skybox;
 
 /* ---------------------- Configuracion de luces ----------------------*/
 // ambient
@@ -1699,20 +1776,18 @@ let hemilight = new THREE.HemisphereLight(0xF3F3F3, 0x000000, 2);
     renderer.toneMappingExposure = 2.3;
 
 
-
+// luz direccional
 const dirLight = new THREE.DirectionalLight( 0xffffff, 2 );
     dirLight.color.setHSL( 0.1, 1, 0.95 );
     dirLight.position.set( - 1, 1.75, 1 );
     dirLight.position.multiplyScalar( 30 );
     scene.add( dirLight );
 
+    // sombra de la luz direccional
     dirLight.castShadow = true;
-
     dirLight.shadow.mapSize.width = 2048;
     dirLight.shadow.mapSize.height = 2048;
-
     const d = 250;
-
     dirLight.shadow.camera.left = - d;
     dirLight.shadow.camera.right = d;
     dirLight.shadow.camera.top = d;
@@ -1721,8 +1796,9 @@ const dirLight = new THREE.DirectionalLight( 0xffffff, 2 );
     dirLight.shadow.camera.far = 3500;
     dirLight.shadow.bias = - 0.0001;
 
-    const dirLightHelper = new THREE.DirectionalLightHelper( dirLight, 10 );
-    scene.add( dirLightHelper );
+    // helper de luz    
+    //const dirLightHelper = new THREE.DirectionalLightHelper( dirLight, 10 );
+    //scene.add( dirLightHelper );
                 
 
     renderer.shadowMap.enabled = true;

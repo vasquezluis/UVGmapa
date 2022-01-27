@@ -4,6 +4,9 @@ let btn_buscar = document.getElementById("btn_busq");
 
 function clean(){
     let text_value = document.getElementById("text_user").value = "";
+    // cerrar menu de opciones al buscar
+    let button = document.getElementById('togglermovil');
+    button.click();
 }
 function buscar(){
     let text_value = document.getElementById("text_user").value;
