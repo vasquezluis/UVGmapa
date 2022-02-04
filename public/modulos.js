@@ -494,7 +494,7 @@ function click_varios_intecap(){
     centrar_camara(-123,0,-35);
     // Colocación de flecha con el modulo
     flecha(-123,15,-35);
-    mostrar("btn_intecap");
+    // mostrar("btn_intecap");
     // función para cerrar el menú de opciones en dispositivos moviles
     autoclick();
 }
