@@ -113,6 +113,8 @@ document.getElementById('btn_b1').onclick = () =>
     Especialista en asuntos estudiantiles
         <ul>
             <li> Lidia Ofelia Xocop Roquel </li>
+            <li> loxocop@uvg.edu.gt </li>
+            <li> ext: 41115 </li>
         </ul>
     Administración
         <ul>
@@ -166,8 +168,7 @@ document.getElementById('btn_b3').onclick = () =>
         </ul>
     Asistente facultad de eduación
         <ul>
-            <li> Lisbeth Maritza Cuy Chom </li>
-            <li> lmcuy@uvg.edu.gt </li>
+            <li> Blanca Senovia Hernández Pocop </li>
             <li> ext: 41215 </li>
         </ul>
     Encargado de laboratorios
@@ -267,16 +268,10 @@ document.getElementById('btn_b5').onclick = () =>
 document.getElementById('btn_b6').onclick = () => 
     showModal2('Módulo B6', 'https://momento360.com/e/u/60515e47ffd940e8994fbeda5af47d2d?utm_campaign=embed&utm_source=other&heading=-123.93&pitch=-12.18&field-of-view=75&size=medium', 'Maker Space','https://momento360.com/e/u/e6c217ac85d64308accf22ab030c9263?utm_campaign=embed&utm_source=other&heading=87.95&pitch=-43.23&field-of-view=75&size=medium', 'Maker Space','El módulo B6 es un edificio color crema con techo rojo.', `
     <ul>
-        <li> Enfermería </li>
         <li> Maker Space Na'ojilal </li>
+        <li> Enfermería </li>
     </ul>
     `,`
-    Enfermería
-        <ul>
-            <li> Meliza Arminda Godínez Orozco </li>
-            <li> magonidez@uvg.edu.gt </li>
-            <li> ext: 41309 </li>
-        </ul>
     Coordinador de Maker Space Na'ojilal
         <ul>
             <li> M.A. Ing. Jeremias Ezequiel Morales García </li>
@@ -286,6 +281,14 @@ document.getElementById('btn_b6').onclick = () =>
     FanPage (Maker Space): <a target="_blank" href="https://www.facebook.com/MakersUVG" class="link"> Pagina de facebook </a> <br>
     LOGO (Maker Space): <a target="_blank" href="https://view.genial.ly/60ba8cad0045310d5064c7fa/interactive-image-logo-maker-uvg-altiplano" class="link"> Logo interactivo </a>
     <br> <br>
+
+    Enfermería
+        <ul>
+            <li> Meliza Arminda Godínez Orozco </li>
+            <li> magonidez@uvg.edu.gt </li>
+            <li> ext: 41309 </li>
+        </ul>
+    
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
     `, 'Cerrar');
 document.getElementById('btn_b7').onclick = () => 

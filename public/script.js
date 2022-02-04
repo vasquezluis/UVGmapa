@@ -23,7 +23,7 @@ camera = new THREE.PerspectiveCamera(
         10000
     );
 // ubicar la camara lejos del punto 0, 0, 0 -> 0,40,100
-camera.position.set(0,40,100);
+camera.position.set(0,41,100);
 
 
 
@@ -773,7 +773,7 @@ loader.load('/models/terreno/caminoentrada.gltf', result => {
     scene.add(calle2);
 });
 // modelo de campo1
-loader.load('/models/terreno/campo1.gltf', result => {
+loader.load('/models/terreno/footcamp.gltf', result => {
     var campo1 = result.scene.children[0];
     // para las sombras
     campo1.traverse(n =>{
@@ -788,7 +788,7 @@ loader.load('/models/terreno/campo1.gltf', result => {
     scene.add(campo1);
 });
 // modelo de campo2
-loader.load('/models/terreno/campo1.gltf', result => {
+loader.load('/models/terreno/footcamp.gltf', result => {
     var campo2 = result.scene.children[0];
     // para las sombras
     campo2.traverse(n =>{
@@ -803,7 +803,7 @@ loader.load('/models/terreno/campo1.gltf', result => {
     scene.add(campo2);
 });
 // modelo de cancha 1
-loader.load('/models/terreno/canchas.gltf', result => {
+loader.load('/models/terreno/canchas1.gltf', result => {
     var cancha1 = result.scene.children[0];
     // para las sombras
     cancha1.traverse(n =>{
@@ -818,7 +818,7 @@ loader.load('/models/terreno/canchas.gltf', result => {
     scene.add(cancha1);
 });
 // modelo de cancha 2
-loader.load('/models/terreno/canchas.gltf', result => {
+loader.load('/models/terreno/canchas1.gltf', result => {
     var cancha2 = result.scene.children[0];
     // para las sombras
     cancha2.traverse(n =>{
@@ -1635,6 +1635,55 @@ loader.load('/models/nature/arbolito.gltf', result => {
     scene.add(arbolito);
 });
 
+// modelo carro1
+loader.load('/models/carros/carro1.gltf', result => {
+    var carrito1 = result.scene.children[0];
+    // para las sombras
+    carrito1.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    carrito1.position.set(44,-1.5,0);
+    carrito1.scale.set(.7,0.2,.7);
+    carrito1.rotation.set(0,-Math.PI/2,0);
+    scene.add(carrito1);
+});
+// modelo carro 2
+loader.load('/models/carros/carro2.gltf', result => {
+    var carrito2 = result.scene.children[0];
+    // para las sombras
+    carrito2.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    carrito2.position.set(40.5,-2,35);
+    carrito2.scale.set(1,1,1);
+    carrito2.rotation.set(0,Math.PI*2,0);
+    scene.add(carrito2);
+});
+// modelo carro 3
+loader.load('/models/carros/carro3.gltf', result => {
+    var carrito3 = result.scene.children[0];
+    // para las sombras
+    carrito3.traverse(n =>{ 
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    carrito3.position.set(38.5,-2,126);
+    carrito3.scale.set(1,1,1);
+    carrito3.rotation.set(0,Math.PI/2,0);
+    scene.add(carrito3);
+});
+
 // modelo texto entrada
 loader.load('/models/text/entrada.gltf', result => {
     var entradatext = result.scene.children[0];
@@ -1650,6 +1699,7 @@ loader.load('/models/text/entrada.gltf', result => {
     entradatext.scale.set(5,5,5);
     entradatext.rotation.set(-Math.PI/2,Math.PI,0);
     scene.add(entradatext);
+    
 });
 // modelo texto intecap
 loader.load('/models/text/intecap.gltf', result => {
@@ -1699,6 +1749,491 @@ loader.load('/models/text/uvg.gltf', result => {
     uvgtext.rotation.set(Math.PI/2,0,0);
     scene.add(uvgtext);
 });
+// modelo texto campo agricola
+loader.load('/models/text/cagricola.gltf', result => {
+    var agricolatext = result.scene.children[0];
+    // para las sombras
+    agricolatext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    agricolatext.position.set(-150,15,-165);
+    agricolatext.scale.set(5,5,5);
+    agricolatext.rotation.set(Math.PI/2,0,0);
+    scene.add(agricolatext);
+});
+
+// TEXTO
+// modelo texto a1
+loader.load('/models/text/a1.gltf', result => {
+    var a1text = result.scene.children[0];
+    // para las sombras
+    a1text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    a1text.position.set(63,5,-40);
+    a1text.scale.set(3,3,3);
+    a1text.rotation.set(Math.PI/2,0,0);
+    scene.add(a1text);
+});
+// modelo texto a2
+loader.load('/models/text/a2.gltf', result => {
+    var a2text = result.scene.children[0];
+    // para las sombras
+    a2text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    a2text.position.set(63,5,-53);
+    a2text.scale.set(3,3,3);
+    a2text.rotation.set(Math.PI/2,0,0);
+    scene.add(a2text);
+});
+// modelo texto a3
+loader.load('/models/text/a3.gltf', result => {
+    var a3text = result.scene.children[0];
+    // para las sombras
+    a3text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    a3text.position.set(63,5,-66);
+    a3text.scale.set(3,3,3);
+    a3text.rotation.set(Math.PI/2,0,0);
+    scene.add(a3text);
+});
+// modelo texto a4
+loader.load('/models/text/a4.gltf', result => {
+    var a4text = result.scene.children[0];
+    // para las sombras
+    a4text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    a4text.position.set(63,5,-92);
+    a4text.scale.set(3,3,3);
+    a4text.rotation.set(Math.PI/2,0,0);
+    scene.add(a4text);
+});
+// modelo texto a5
+loader.load('/models/text/a5.gltf', result => {
+    var a5text = result.scene.children[0];
+    // para las sombras
+    a5text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    a5text.position.set(63,5,-105);
+    a5text.scale.set(3,3,3);
+    a5text.rotation.set(Math.PI/2,0,0);
+    scene.add(a5text);
+});
+// modelo texto b1
+loader.load('/models/text/b1.gltf', result => {
+    var b1text = result.scene.children[0];
+    // para las sombras
+    b1text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b1text.position.set(21.5,5,0);
+    b1text.scale.set(3,3,3);
+    b1text.rotation.set(Math.PI/2,0,0);
+    scene.add(b1text);
+});
+// modelo texto b2
+loader.load('/models/text/b2.gltf', result => {
+    var b2text = result.scene.children[0];
+    // para las sombras
+    b2text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b2text.position.set(19,5,-30);
+    b2text.scale.set(3,3,3);
+    b2text.rotation.set(Math.PI/2,0,0);
+    scene.add(b2text);
+});
+// modelo texto b3
+loader.load('/models/text/b3.gltf', result => {
+    var b3text = result.scene.children[0];
+    // para las sombras
+    b3text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b3text.position.set(19,5,-43);
+    b3text.scale.set(3,3,3);
+    b3text.rotation.set(Math.PI/2,0,0);
+    scene.add(b3text);
+});
+// modelo texto b4
+loader.load('/models/text/b4.gltf', result => {
+    var b4text = result.scene.children[0];
+    // para las sombras
+    b4text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b4text.position.set(19,5,-56);
+    b4text.scale.set(3,3,3);
+    b4text.rotation.set(Math.PI/2,0,0);
+    scene.add(b4text);
+});
+// modelo texto b5
+loader.load('/models/text/b5.gltf', result => {
+    var b5text = result.scene.children[0];
+    // para las sombras
+    b5text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b5text.position.set(19,5,-69);
+    b5text.scale.set(3,3,3);
+    b5text.rotation.set(Math.PI/2,0,0);
+    scene.add(b5text);
+});
+// modelo texto b6
+loader.load('/models/text/b6.gltf', result => {
+    var b6text = result.scene.children[0];
+    // para las sombras
+    b6text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b6text.position.set(19,5,-82);
+    b6text.scale.set(3,3,3);
+    b6text.rotation.set(Math.PI/2,0,0);
+    scene.add(b6text);
+});
+// modelo texto b7
+loader.load('/models/text/b7.gltf', result => {
+    var b7text = result.scene.children[0];
+    // para las sombras
+    b7text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b7text.position.set(19,5,-95);
+    b7text.scale.set(3,3,3);
+    b7text.rotation.set(Math.PI/2,0,0);
+    scene.add(b7text);
+});
+// modelo texto b8
+loader.load('/models/text/b8.gltf', result => {
+    var b8text = result.scene.children[0];
+    // para las sombras
+    b8text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    b8text.position.set(19,5,-108);
+    b8text.scale.set(3,3,3);
+    b8text.rotation.set(Math.PI/2,0,0);
+    scene.add(b8text);
+});
+// modelo texto c1
+loader.load('/models/text/c1.gltf', result => {
+    var c1text = result.scene.children[0];
+    // para las sombras
+    c1text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    c1text.position.set(-59.5,5,-58);
+    c1text.scale.set(3,3,3);
+    c1text.rotation.set(Math.PI/2,0,0);
+    scene.add(c1text);
+});
+// modelo texto c2
+loader.load('/models/text/c2.gltf', result => {
+    var c2text = result.scene.children[0];
+    // para las sombras
+    c2text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    c2text.position.set(-51.5,5,-73);
+    c2text.scale.set(3,3,3);
+    c2text.rotation.set(Math.PI/2,0,0);
+    scene.add(c2text);
+});
+// modelo texto c3
+loader.load('/models/text/c3.gltf', result => {
+    var c3text = result.scene.children[0];
+    // para las sombras
+    c3text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    c3text.position.set(-51.5,5,-86);
+    c3text.scale.set(3,3,3);
+    c3text.rotation.set(Math.PI/2,0,0);
+    scene.add(c3text);
+});
+// modelo texto c4
+loader.load('/models/text/c4.gltf', result => {
+    var c4text = result.scene.children[0];
+    // para las sombras
+    c4text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    c4text.position.set(-51.5,5,-99);
+    c4text.scale.set(3,3,3);
+    c4text.rotation.set(Math.PI/2,0,0);
+    scene.add(c4text);
+});
+// modelo texto c5
+loader.load('/models/text/c5.gltf', result => {
+    var c5text = result.scene.children[0];
+    // para las sombras
+    c5text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    c5text.position.set(-51.5,5,-112);
+    c5text.scale.set(3,3,3);
+    c5text.rotation.set(Math.PI/2,0,0);
+    scene.add(c5text);
+});
+
+// modelo texto k1
+loader.load('/models/text/k1.gltf', result => {
+    var k1text = result.scene.children[0];
+    // para las sombras
+    k1text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    k1text.position.set(-39,5,-40);
+    k1text.scale.set(3,3,3);
+    k1text.rotation.set(Math.PI/2,0,0);
+    scene.add(k1text);
+});
+// modelo texto cafeteria
+loader.load('/models/text/cafe.gltf', result => {
+    var cafetext = result.scene.children[0];
+    // para las sombras
+    cafetext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    cafetext.position.set(-11,5,-165);
+    cafetext.scale.set(3,3,3);
+    cafetext.rotation.set(Math.PI/2,0,0);
+    scene.add(cafetext);
+});
+// modelo texto salon mayor
+loader.load('/models/text/smayor.gltf', result => {
+    var mayortext = result.scene.children[0];
+    // para las sombras
+    mayortext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    mayortext.position.set(-39.5,12,-165);
+    mayortext.scale.set(3,3,3);
+    mayortext.rotation.set(Math.PI/2,0,0);
+    scene.add(mayortext);
+});
+// modelo texto salon altiplano
+loader.load('/models/text/l.gltf', result => {
+    var ltext = result.scene.children[0];
+    // para las sombras
+    ltext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    ltext.position.set(25,5,140);
+    ltext.scale.set(3,3,3);
+    ltext.rotation.set(Math.PI/2,0,Math.PI);
+    scene.add(ltext);
+});
+// modelo texto e
+loader.load('/models/text/e.gltf', result => {
+    var etext = result.scene.children[0];
+    // para las sombras
+    etext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    etext.position.set(-40,5,81);
+    etext.scale.set(3,3,3);
+    etext.rotation.set(Math.PI/2,0,-Math.PI/2);
+    scene.add(etext);
+});
+// modelo texto f
+loader.load('/models/text/f.gltf', result => {
+    var ftext = result.scene.children[0];
+    // para las sombras
+    ftext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    ftext.position.set(-70,5,61);
+    ftext.scale.set(3,3,3);
+    ftext.rotation.set(Math.PI/2,0,-Math.PI/2);
+    scene.add(ftext);
+});
+// modelo texto m1
+loader.load('/models/text/m1.gltf', result => {
+    var m1text = result.scene.children[0];
+    // para las sombras
+    m1text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    m1text.position.set(-92,5,61.5);
+    m1text.scale.set(3,3,3);
+    m1text.rotation.set(Math.PI/2,0,-Math.PI/2);
+    scene.add(m1text);
+});
+// modelo texto m2
+loader.load('/models/text/m2.gltf', result => {
+    var m2text = result.scene.children[0];
+    // para las sombras
+    m2text.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    m2text.position.set(-105,5,61.5);
+    m2text.scale.set(3,3,3);
+    m2text.rotation.set(Math.PI/2,0,-Math.PI/2);
+    scene.add(m2text);
+});
+// modelo texto n
+loader.load('/models/text/n.gltf', result => {
+    var ntext = result.scene.children[0];
+    // para las sombras
+    ntext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    ntext.position.set(-116,5,61);
+    ntext.scale.set(3,3,3);
+    ntext.rotation.set(Math.PI/2,0,-Math.PI/2);
+    scene.add(ntext);
+});
+// modelo texto d
+loader.load('/models/text/caja.gltf', result => {
+    var cajatext = result.scene.children[0];
+    // para las sombras
+    cajatext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    cajatext.position.set(-57.5,5,140);
+    cajatext.scale.set(3,3,3);
+    cajatext.rotation.set(Math.PI/2,0,Math.PI);
+    scene.add(cajatext);
+});
+// modelo texto invernadero
+loader.load('/models/text/inver.gltf', result => {
+    var invertext = result.scene.children[0];
+    // para las sombras
+    invertext.traverse(n =>{
+        if(n.isMesh){
+            n.castShadow = true;
+            n.receiveShadow = true;
+            if(n.material.map) n.material.map.anisotropy = 16;
+        }
+    });
+    invertext.position.set(-17,5,150);
+    invertext.scale.set(3,3,3);
+    invertext.rotation.set(Math.PI/2,0,Math.PI);
+    scene.add(invertext);
+});
+
+
 
 };
 
@@ -1742,7 +2277,7 @@ let controls = new OrbitControls(camera, renderer.domElement);
 // distancia de acercamiento y alejamiento
 //40,160
 controls.minDistance = 40;
-controls.maxDistance = 100;
+controls.maxDistance = 150;
 // configuración de rotación máxima
 controls.maxPolarAngle = Math.PI / 3;
 // movimiento lateral
@@ -1831,6 +2366,7 @@ const tick = () => {
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick);
+
 }
 
 // llamar a la función general
